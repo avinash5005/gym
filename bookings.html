@@ -3,27 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bookings | Pumping Iron Gym</title>
+<title>Bookings | Arena Fitness</title>
 <meta name="description" content="Book a personal training session, assessment or free gym tour.">
-<meta name="theme-color" content="#0B0E12">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B0E12'/%3E%3Cpath d='M11 5h9l-4 22H7z' fill='%23F26B1D'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0A0C10">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0C10'/%3E%3Cpath d='M11 5h9l-4 22H7z' fill='%23FF6A1F'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&family=Big+Shoulders+Display:wght@700..900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img-boxer.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="hd"><div class="container">
-<a href="index.html" class="logo" aria-label="Pumping Iron home">Pumping Iron</a>
+<a href="index.html" class="logo" aria-label="Arena Fitness home">Arena Fitness</a>
 <nav class="dn" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="classes.html">Classes</a><a href="trainers.html">Trainers</a><a href="calculators.html">Calculators</a><a href="bookings.html" aria-current="page">Bookings</a><a href="memberships.html">Memberships</a><a href="store.html">Store</a><a href="community.html">Community</a><a href="contact.html">Contact</a></nav>
 <div class="ha"><button class="cartb" aria-label="Open cart">Cart<span class="cn">0</span></button><a class="btn p sm" href="memberships.html">Join now</a>
 <button class="mt" aria-label="Open menu" aria-expanded="false">Menu</button></div>
 </div></header>
 <nav class="mn" aria-label="Mobile"><a href="index.html">Home</a><a href="about.html">About</a><a href="classes.html">Classes</a><a href="trainers.html">Trainers</a><a href="calculators.html">Calculators</a><a href="bookings.html" aria-current="page">Bookings</a><a href="memberships.html">Memberships</a><a href="store.html">Store</a><a href="community.html">Community</a><a href="contact.html">Contact</a></nav>
 <main id="main">
-<header class="ph"><div class="container"><h1 class="rv">Book a <em>session</em></h1><p class="rv" style="--d:1">Reserve personal training, a technique assessment or a free gym tour.</p></div></header>
+<header class="ph" style="--phi:url(img-boxer.webp)"><div class="container"><h1 class="rv">Book a <em>session</em></h1><p class="rv" style="--d:1">Reserve personal training, a technique assessment or a free gym tour.</p></div></header>
 <section class="sec" style="border:0"><div class="container"><div class="split">
-<div class="rv"><h3>How it works</h3><p>Pick a service, a coach and a slot. We confirm by call or WhatsApp within a few hours.</p><ul class="ck"><li>First visit and tour are free</li><li>Bring shoes, a towel and your goals</li><li>Cancel or reschedule anytime</li></ul><div class="im" data-tilt style="aspect-ratio:16/10"><img src="img-squat.jpg" alt="Lifter focusing before a heavy set" loading="lazy"></div></div>
+<div class="rv"><h3>How it works</h3><p>Pick a service, a coach and a slot. We confirm by call or WhatsApp within a few hours.</p><ul class="ck"><li>First visit and tour are free</li><li>Bring shoes, a towel and your goals</li><li>Cancel or reschedule anytime</li></ul></div>
 <form class="rv" style="--d:1" data-toast="Booking request sent. We will contact you to confirm.">
 <div class="fr"><div class="fg"><label for="n1">Full name</label><input id="n1" required autocomplete="name"></div><div class="fg"><label for="p1">Phone</label><input id="p1" type="tel" required autocomplete="tel" placeholder="+91 98765 43210"></div></div>
 <div class="fr"><div class="fg"><label for="s1">Service</label><select id="s1"><option>1-on-1 personal training</option><option>Powerlifting technique assessment</option><option>Body composition and diet audit</option><option>Free gym tour and day pass</option></select></div><div class="fg"><label for="c1">Coach</label><select id="c1"><option>Vikram Rathore</option><option>Meera Kapoor</option><option>Arjun Chauhan</option><option>Any available coach</option></select></div></div><div class="fr"><div class="fg"><label for="d1">Preferred date</label><input id="d1" type="date" required></div><div class="fg"><label for="t1">Time slot</label><select id="t1"><option>8:00 - 9:00 AM</option><option>11:00 AM - 12:00 PM</option><option>4:00 - 5:00 PM</option><option>7:00 - 8:00 PM</option></select></div></div>
@@ -31,15 +33,13 @@
 </main>
 <footer class="ft"><div class="container">
 <div class="fgrid">
-<div><h4>Pumping Iron</h4><p>Heavy iron, real coaching, zero distractions. Open 24/7 for members.</p></div>
+<div><h4>Arena Fitness</h4><p>Heavy iron, real coaching, zero distractions. Open 24/7 for members.</p></div>
 <div><h4>Visit</h4><p>Plot 24, Civil Lines<br>City Centre<br>Staffed 5 AM to 11 PM</p></div>
 <div><h4>Talk to us</h4><div class="fk"><a href="tel:+919876543210">+91 98765 43210</a><a href="mailto:hello@pumpingiron.in">hello@pumpingiron.in</a><a href="https://wa.me/919876543210">WhatsApp</a></div></div>
 <div><h4>Follow</h4><div class="fk"><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Facebook</a></div></div>
 </div>
-<div class="big" aria-hidden="true">Pumping Iron</div>
-<div class="fbm">&copy; 2026 Pumping Iron Gym. All rights reserved.</div>
+<div class="fbm">&copy; 2026 Arena Fitness. All rights reserved.</div>
 </div></footer>
-<script src="main.js"></script>
-<script src="fx.js"></script>
+<script src="main.js?v=6" defer></script>
 </body>
 </html>
