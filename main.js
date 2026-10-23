@@ -23,7 +23,7 @@ const getSaved = () => { try { return localStorage.getItem('pi_theme'); } catch 
 const tg = document.createElement('button'); tg.className = 'tg'; tg.type = 'button'; tg.setAttribute('aria-label', 'Switch between light and dark theme');
 tg.innerHTML = '<svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
 const haBox = $('.ha'); if (haBox) haBox.prepend(tg);
-const applyTheme = t => { root.dataset.theme = t; const m = $('meta[name="theme-color"]'); if (m) m.content = t === 'light' ? '#EEEAE3' : '#0A0C10'; tg.setAttribute('aria-pressed', t === 'light'); };
+const applyTheme = t => { root.dataset.theme = t; const m = $('meta[name="theme-color"]'); if (m) m.content = t === 'light' ? '#EDF1F8' : '#0A0C10'; tg.setAttribute('aria-pressed', t === 'light'); };
 applyTheme(getSaved() || (sysLight.matches ? 'light' : 'dark'));
 tg.onclick = () => {
   const next = root.dataset.theme === 'light' ? 'dark' : 'light', r = tg.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2;
@@ -104,7 +104,7 @@ const P = [
   { id: 4, n: 'Heavy Duty Leather Belt', c: 'gear', p: 3499, d: '10mm lever belt for core pressure and spinal support.' },
   { id: 5, n: 'Calibrated Lifting Straps', c: 'gear', p: 799, d: 'Heavy cotton straps with neoprene padding for big pulls.' },
   { id: 6, n: 'Titanium Knee Sleeves (Pair)', c: 'gear', p: 2299, d: '7mm neoprene sleeves, approved for powerlifting.' },
-  { id: 7, n: 'Pumping Iron Oversized Hoodie', c: 'apparel', p: 1999, d: 'Heavyweight fleece for warm-ups and everyday wear.' },
+  { id: 7, n: 'Arena Fitness Oversized Hoodie', c: 'apparel', p: 1999, d: 'Heavyweight fleece for warm-ups and everyday wear.' },
   { id: 8, n: 'Athletic Fitted Stringer', c: 'apparel', p: 899, d: 'Breathable cotton stringer with full range of motion.' }
 ];
 let cart = [], disc = 0;
